@@ -1,0 +1,60 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    border-radius: 20rem;
+    line-height: 1;
+    font-size: 1.8rem;
+    padding: 1.9rem 6.5rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    color: $color-primary-violet;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+
+    @media only screen and (min-width: 120em) {
+        font-size: 3rem;
+        padding: 2.5rem 15rem;
+    }
+
+    @media only screen and (max-width: 75em) {
+        font-size: 1.4rem;
+        padding: 1.5rem 8rem;
+    }
+
+    @media only screen and (max-width: 62.5em) {
+        font-size: 1.3rem;
+        padding: 1.4rem 7rem;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+        font-size: 2.6rem;
+        padding: 2.5rem 15rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        padding: 2.2rem 12rem;
+    }
+
+    @media only screen and (max-width: 23.4375em) {
+        font-size: 2rem;
+        padding: 1.5rem 6.5rem;
+    }
+
+    &:hover {
+        background-color: $color-primary-soft_magenta;
+        color: #ffffff;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        background-color: #e15ce5;
+        transform: translateY(2px);
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    }
+}
